@@ -1,23 +1,28 @@
-# Novo-reposit-rio-
+# 🎲 Jogo de Adivinhação em Python
+
+Este projeto é um simples jogo de adivinhação onde o computador escolhe um número aleatório entre 0 e 5, e o jogador tenta adivinhar.
+
+## Código
+
+```python
 from random import randint
 from time import sleep
- 
- # Pedidindo para o computador escolher os números de 0 a 5
 
-computador = randint(0,5)
-print("-*-" * 20)
-print("Vou pensar em um número entre 0 e 5, tente advinhar: ")
-print("-*-" * 20)
+# Computador escolhe um número aleatório
+computador = randint(0, 5)
 
-# Agora o usuário irá informar o seu número 
+print("- -" * 20)
+print("Vou pensar em um número entre 0 e 5. Tente adivinhar!")
+print("- -" * 20)
 
-jogador = int(input(("Em que número eu pensei? ")))
-print("PROCESSANDO ... ")
+# Jogador faz sua escolha
+jogador = int(input("Em que número eu pensei? "))
+
+print("PROCESSANDO...")
 sleep(3)
 
-# Resultado 
-
-if jogador == computador: 
+# Resultado
+if jogador == computador:
     print("Parabéns, você venceu!!!")
-else: 
-    print(f"Errou haha eu pensei no número {computador}... eu venci!!")
+else:
+    print(f"Errou! Eu pensei no número {computador}... eu venci!!")
