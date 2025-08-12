@@ -1,4 +1,4 @@
-# 🎲 Jogo de Adivinhação em Python
+# Jogo de Adivinhação em Python
 
 Este projeto é um simples jogo de adivinhação onde o computador escolhe um número aleatório entre 0 e 5, e o jogador tenta adivinhar.
 
